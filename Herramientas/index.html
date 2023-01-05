@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Herramientas</title>
+</head>
+<body onload="mueveReloj()">
+    <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+    <section class="herramientas" id="temporizador">
+        <h3>Temporizador</h3>
+        <div class="contenedor">
+            <div class="numeros" id="numerosT">
+                <div class="horas">0</div>:
+                <div class="minutos">0</div>:
+                <div class="segundos">0</div>
+            </div>
+            <div class="botones">
+                <button id="iniciar">Iniciar</button>
+                <button id="control"><img src="control.png" alt="imagen"></button>
+                <button id="restablecer">Restablecer</button>
+            </div>
+        </div>
+    </section>
+    <!--........................................................-->
+    <section class="herramientas" id="notas">
+        <h3>Notas</h3>
+        <textarea type="textarea" name="text"></textarea>
+        <div class="botones">
+            <button id="guardar">Guardar</button>
+            <button id="abrir">Abrir</button>
+        </div>
+    </section>
+    <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+    <section class="herramientas" id="cabeza">    
+        <nav id="opciones">
+            <button><img src="" alt="icon"></button>
+            <button><img src="" alt="icon"></button>
+            <button><img src="" alt="icon"></button>
+            <button><img src="" alt="icon"></button>
+            <button><img src="" alt="icon"></button>
+        </nav>
+        <h1>Herramientas</h1>
+    </section>
+    <!--........................................................-->
+    <section class="herramientas" id="calculadora">
+        <h3>Calculadora</h3>
+            <form action="" name="calculator">
+                <input type="textfield" name="ans" value="" autocomplete="off" id="box">
+                <div id="teclado">
+                    <input type="button" value="1" onclick="document.calculator.ans.value+='1'">
+                    <input type="button" value="2" onclick="document.calculator.ans.value+='2'">
+                    <input type="button" value="3" onclick="document.calculator.ans.value+='3'">
+                    <input class="aux" type="button" value="/" onclick="document.calculator.ans.value+='/'">
+                    <br>
+                    <input type="button" value="4" onclick="document.calculator.ans.value+='4'">
+                    <input type="button" value="5" onclick="document.calculator.ans.value+='5'">
+                    <input type="button" value="6" onclick="document.calculator.ans.value+='6'">
+                    <input class="aux" type="button" value="X" onclick="document.calculator.ans.value+='*'">
+                    <br>
+                    <input type="button" value="7" onclick="document.calculator.ans.value+='7'">
+                    <input type="button" value="8" onclick="document.calculator.ans.value+='8'">
+                    <input type="button" value="9" onclick="document.calculator.ans.value+='9'">
+                    <input class="aux" type="button" value="-" onclick="document.calculator.ans.value+='-'">
+                    <br>
+                    <input class="aux" type="button" value="C" onclick="document.calculator.ans.value=''">
+                    <input type="button" value="0" onclick="document.calculator.ans.value+='0'">
+                    <input class="aux" type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+                    <input class="aux" type="button" value="+" onclick="document.calculator.ans.value+='+'">
+            </div>
+        </form>
+    </section>
+    <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+    <section class="herramientas" id="cronometro">
+        <h3>Cronometro</h3>
+        <div class="contenedor">
+            <div class="numeros" id="numerosT">
+                <div id="horas">0</div>:
+                <div id="minutos">0</div>:
+                <div id="segundos">0</div>
+            </div>
+            <div class="botones">
+                <button id="iniciar" onclick="cronometrar()">Iniciar</button>
+                <button id="control"><img src="control.png" alt="imagen"></button>
+                <button id="restablecer">Restablecer</button>
+            </div>
+        </div>
+    </section>
+    <!--........................................................-->
+    <section class="herramientas" id="reloj">
+        <h3>Reloj</h3>
+        <form name="form_reloj" class="contenedor">
+            <input type="text" name="reloj" size="10">
+        </form>
+    </section>
+    <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+    <script src="js.js"></script>
+</body>
+</html>
