@@ -1,0 +1,13 @@
+Se rige por una estructura de
+    propiedad - valor
+Los objetos en JSON son estrictos, a diferencias que en JS
+JSON acepta cammel case y snake case
+JSON no acepta comillas simples sino dobles
+JSON soporta el anidamiento de objetos
+
+Estructura básica de JSON:
+
+    {
+        "propiedad":valor,
+        "propiedad":valor
+    }
