@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="js.ico" type="image/x-icon">
+    <title>JavaScript</title>
+</head>
+<body onload="moverReloj()" class="">
+    <header>
+        <form name="form_reloj" id="form_reloj" class="">
+            <input type="text" name="reloj" size="6" id="reloj" readonly class="">
+        </form>
+        <h1>JavaScript</h1>
+        <button class="botones" id="mode">M</button>
+    </header>
+    <main>
+        <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <section class="programas" id="cronometro">
+            <div id="queIndica"><p>Días</p><p>Hor</p><p>Min</p><p>Seg</p></div>
+            <span id="contadorDias">0</span>:<span id="contadorHoras">0</span>:<span id="contadorMinutos">0</span>:<span id="contadorSegundos">0</span>
+            <br>
+            <button onclick="comenzar()" id="comenzar">Comenzar</button>
+            <button onclick="controlar()" id="controlar">Pausar/Despausar</button>
+            <button onclick="restablecer()" id="restablecer">Restablecer</button>
+        </section>
+        <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <section class="programas" id="calculadora">
+            <form action="" name="calculator">
+                <input type="textfield" name="ans" value="" autocomplete="off" id="box">
+                <div id="teclado">
+                    <input type="button" value="1" onclick="document.calculator.ans.value+='1'">
+                    <input type="button" value="2" onclick="document.calculator.ans.value+='2'">
+                    <input type="button" value="3" onclick="document.calculator.ans.value+='3'">
+                    <input class="aux" type="button" value="/" onclick="document.calculator.ans.value+='/'">
+                    <br>
+                    <input type="button" value="4" onclick="document.calculator.ans.value+='4'">
+                    <input type="button" value="5" onclick="document.calculator.ans.value+='5'">
+                    <input type="button" value="6" onclick="document.calculator.ans.value+='6'">
+                    <input class="aux" type="button" value="X" onclick="document.calculator.ans.value+='*'">
+                    <br>
+                    <input type="button" value="7" onclick="document.calculator.ans.value+='7'">
+                    <input type="button" value="8" onclick="document.calculator.ans.value+='8'">
+                    <input type="button" value="9" onclick="document.calculator.ans.value+='9'">
+                    <input class="aux" type="button" value="-" onclick="document.calculator.ans.value+='-'">
+                    <br>
+                    <input class="aux" type="button" value="C" onclick="document.calculator.ans.value=''">
+                    <input type="button" value="0" onclick="document.calculator.ans.value+='0'">
+                    <input class="aux" type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+                    <input class="aux" type="button" value="+" onclick="document.calculator.ans.value+='+'">
+                </div>
+            </form>
+        </section>
+        <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <section class="programas" id="dibujo">
+            <canvas></canvas>
+        </section>
+        <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <section class="programas" id="">
+
+        </section>
+        <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <section class="programas" id="">
+
+        </section>
+    </main>
+    <script src="js.js"></script>
+</body>
+</html>

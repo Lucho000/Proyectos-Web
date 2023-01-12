@@ -1,0 +1,19 @@
+---------------------------------------------------------------------
+git config --global user.name "Luciano David Sposito"
+git config --global user.mail "lucianodavidsposito@gmail.com"
+git config --global user.password "43562118Lu-"
+---------------------------------------------------------------------
+git status
+git log
+---------------------------------------------------------------------
+git init
+git add . | git add _archivo/carpeta_
+git commit -m "_mensaje commit_"
+git branch -M main
+---------------------------------------------------------------------
+git remote add origin https://github.com/Lucho000/Proyectos-Web.git
+git push -u origin main
+---------------------------------------------------------------------
+git fetch
+git pull
+---------------------------------------------------------------------
